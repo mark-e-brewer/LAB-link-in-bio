@@ -1,3 +1,87 @@
-body {
-  background-color: palegoldenrod;
+body, html {
+  height: 100%;
+}
+
+.bgIMG {
+  /* background image and blur effect */
+  background-image: url("https://content.wepik.com/statics/4633934/preview-page0.jpg");
+  filter: blur(23px);
+  -webkit-filter: blur(23px);
+  height: 100%;
+/*scaling for background */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content, .buttons {
+/* to center all of the content of the page over the background */
+  position: absolute;
+  top: 25%; 
+  left: 50%;  
+  transform: translate(-50%, -50%); 
+  width: 80%;
+  padding: 20px;
+  text-align: center;  
+}
+
+.profilePicture {
+  /*bellow is how the square image was made a circle(oval in this case because the image was squeezed on the y axis) */
+  border-radius: 50%;
+  width: 280px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+
+  border: solid #ffd11a 5px;
+
+}
+
+.headerName {
+
+  margin-top: 15px;
+  padding-bottom: -10px;
+  margin-bottom: -10px;
+  color: #585858;
+}
+
+.headerEmail {
+  padding-top: -10px;
+  margin-top: -12px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  color: #787878;
+}
+
+/* ajusting buttons location relative to the master control of them and all other content */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  justify-content: center;
+  top: 140%;
+}
+
+#bar-one {
+  border-radius: 0px;
+  margin: 10px;
+  padding: 15px;
+}
+
+#bar-two {
+  border-radius: 0px;
+  margin: 10px;
+  padding: 15px;
+}
+
+#bar-three {
+  border-radius: 0px;
+  margin: 10px;
+  padding: 15px;
+}
+
+#bar-four {
+  border-radius: 0px;
+  margin: 10px;
+  padding: 15px;
 }
